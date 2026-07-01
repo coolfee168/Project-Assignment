@@ -6,18 +6,13 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace ProjectAssignment
+namespace ProjectAssignment.sokpanha
 {
-    public partial class frm_login : Form
+    public partial class Management : Form
     {
-        public frm_login()
+        public Management()
         {
             InitializeComponent();
-        }
-
-        private void Login_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
