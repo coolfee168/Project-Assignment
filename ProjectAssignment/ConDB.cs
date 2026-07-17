@@ -33,75 +33,8 @@ namespace ProjectAssignment
             }
         }
 
-        // Runs a SELECT query and returns results as a DataTable
-        // Use this for loading data into DataGridViews, ComboBoxes, etc.
-        public static DataTable GetData(string query)
-        {
-            DataTable dt = new DataTable();
-            try
-            {
-                using (SqlConnection conn = new SqlConnection(connectionString))
-                {
-                    SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
-                    adapter.Fill(dt);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Database error: " + ex.Message);
-            }
-            return dt;
-        }
 
-        // Runs INSERT / UPDATE / DELETE queries safely using parameters
-        // Returns true if it succeeded, false if it failed
-        public static bool ExecuteNonQuery(string query, SqlParameter[] parameters)
-        {
-            try
-            {
-                using (SqlConnection conn = new SqlConnection(connectionString))
-                {
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    if (parameters != null)
-                    {
-                        cmd.Parameters.AddRange(parameters);
-                    }
 
-                    conn.Open();
-                    cmd.ExecuteNonQuery();
-                    return true;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Database error: " + ex.Message);
-                return false;
-            }
-        }
-
-        // Runs a query that returns a single value (e.g. COUNT, SUM, checking login)
-        // Useful for things like "does this username exist" or "get total price"
-        public static object ExecuteScalar(string query, SqlParameter[] parameters)
-        {
-            try
-            {
-                using (SqlConnection conn = new SqlConnection(connectionString))
-                {
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    if (parameters != null)
-                    {
-                        cmd.Parameters.AddRange(parameters);
-                    }
-
-                    conn.Open();
-                    return cmd.ExecuteScalar();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Database error: " + ex.Message);
-                return null;
-            }
-        }
+        
     }
 }
