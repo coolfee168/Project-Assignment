@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace ProjectAssignment.sokpanha
 {
-    public partial class Management : Form
+    public partial class panelProduct : Form
     {
-        public Management()
+        public panelProduct()
         {
             InitializeComponent();
         }
