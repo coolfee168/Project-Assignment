@@ -8,14 +8,19 @@ using System.Windows.Forms;
 
 namespace ProjectAssignment
 {
-    public partial class frm_login : Form
+    public partial class FormAdmin : Form
     {
-        public frm_login()
+        public FormAdmin()
         {
             InitializeComponent();
         }
 
-        private void Login_Load(object sender, EventArgs e)
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

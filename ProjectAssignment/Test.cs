@@ -14,19 +14,5 @@ namespace ProjectAssignment
         {
             InitializeComponent();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                ConDB.myConnection();
-                MessageBox.Show("Connected successfully from Form2!");
-                ConDB.con.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Connection failed: " + ex.Message);
-            }
-        }
     }
 }

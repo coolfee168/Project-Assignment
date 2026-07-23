@@ -34,7 +34,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(838, 515);
+            ClientSize = new Size(800, 450);
             Name = "frm_login";
             Text = "Login";
             Load += Login_Load;
