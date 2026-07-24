@@ -36,8 +36,8 @@ namespace ProjectAssignment.sokpanha
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
             // Add the new child form to the panel and show it
-            panel3.Controls.Add(childForm);
-            panel3.Tag = childForm;
+            panel1.Controls.Add(childForm);
+            panel1.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
         }
@@ -55,7 +55,11 @@ namespace ProjectAssignment.sokpanha
 
         private void StuffDashBoard_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
 
+=======
+            OpenChildForm(new StuffDashBoard());
+>>>>>>> 27e0cba64efeb6edba5dc3a271e56def56acbb65
         }
     }
 }
