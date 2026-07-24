@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjectAssignment.sopanha;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -55,11 +56,18 @@ namespace ProjectAssignment.sokpanha
 
         private void StuffDashBoard_Load(object sender, EventArgs e)
         {
-<<<<<<< HEAD
+            
 
-=======
-            OpenChildForm(new StuffDashBoard());
->>>>>>> 27e0cba64efeb6edba5dc3a271e56def56acbb65
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnOrder_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new staffOrder());
         }
     }
 }

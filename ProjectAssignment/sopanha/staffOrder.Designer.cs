@@ -136,10 +136,10 @@
             label1.AutoSize = true;
             label1.BackColor = Color.FromArgb(255, 128, 0);
             tableLayoutPanel1.SetColumnSpan(label1, 4);
-            label1.Font = new Font("Arial Rounded MT Bold", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.Location = new Point(291, 0);
             label1.Name = "label1";
-            label1.Size = new Size(306, 39);
+            label1.Size = new Size(302, 39);
             label1.TabIndex = 0;
             label1.Text = "STAFF ORDER";
             label1.TextAlign = ContentAlignment.MiddleCenter;
