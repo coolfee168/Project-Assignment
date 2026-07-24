@@ -170,6 +170,7 @@
             Controls.Add(panel4);
             Name = "StuffDashBoard";
             Text = "Management";
+            Load += StuffDashBoard_Load;
             Resize += Management_Resize;
             panelSidebar.ResumeLayout(false);
             panelSidebar.PerformLayout();

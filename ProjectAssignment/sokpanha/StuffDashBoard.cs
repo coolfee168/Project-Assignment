@@ -52,5 +52,10 @@ namespace ProjectAssignment.sokpanha
             frm.Show();
             frm.BringToFront();
         }
+
+        private void StuffDashBoard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
