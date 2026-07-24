@@ -39,9 +39,7 @@
             button1 = new Button();
             linkLabel1 = new LinkLabel();
             tableLayoutPanel3 = new TableLayoutPanel();
-            label5 = new Label();
             label4 = new Label();
-            label6 = new Label();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
@@ -190,9 +188,7 @@
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 10F));
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 80F));
             tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 10F));
-            tableLayoutPanel3.Controls.Add(label5, 1, 2);
-            tableLayoutPanel3.Controls.Add(label4, 1, 1);
-            tableLayoutPanel3.Controls.Add(label6, 1, 3);
+            tableLayoutPanel3.Controls.Add(label4, 1, 2);
             tableLayoutPanel3.Dock = DockStyle.Fill;
             tableLayoutPanel3.Location = new Point(449, 37);
             tableLayoutPanel3.Margin = new Padding(0);
@@ -206,41 +202,19 @@
             tableLayoutPanel3.Size = new Size(350, 480);
             tableLayoutPanel3.TabIndex = 1;
             // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Dock = DockStyle.Fill;
-            label5.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.Location = new Point(38, 160);
-            label5.Name = "label5";
-            label5.Size = new Size(274, 40);
-            label5.TabIndex = 1;
-            label5.Text = "Professional store solution";
-            label5.TextAlign = ContentAlignment.TopCenter;
-            // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Dock = DockStyle.Fill;
-            label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(38, 80);
+            label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(38, 200);
+            label4.Margin = new Padding(3, 40, 3, 0);
             label4.Name = "label4";
-            label4.Size = new Size(274, 80);
+            tableLayoutPanel3.SetRowSpan(label4, 2);
+            label4.Size = new Size(274, 150);
             label4.TabIndex = 2;
             label4.Text = "PC Sale Management System";
-            label4.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Dock = DockStyle.Fill;
-            label6.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(38, 200);
-            label6.Name = "label6";
-            label6.Size = new Size(274, 150);
-            label6.TabIndex = 3;
-            label6.Text = "Mange products, customer, sales, invoices and\r\n reports from one  platform.";
-            label6.TextAlign = ContentAlignment.TopCenter;
+            label4.TextAlign = ContentAlignment.TopCenter;
             // 
             // FormLogin
             // 
@@ -272,8 +246,6 @@
         private CheckBox checkBox1;
         private Button button1;
         private LinkLabel linkLabel1;
-        private Label label5;
         private Label label4;
-        private Label label6;
     }
 }
